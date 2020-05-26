@@ -1,0 +1,92 @@
+body {
+    background:black;
+}
+
+#firstshelf {
+    border:10px solid rgb(39, 27, 18);
+    height:auto;
+    width:99%;
+    margin:10px auto;
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns:  repeat(auto-fit, minmax(120px, 1fr));
+    background:radial-gradient( rgba(44, 33, 10, 0.762), rgba(12, 9, 3, 0.8)),url("wood2.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.book {
+    border:5px solid rgb(49, 42, 27);
+    position:relative;
+    max-width: 100px;
+    height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    padding:10px;
+    overflow:hidden;
+    background:linear-gradient(to right, darkolivegreen, rgb(90, 102, 69));
+    box-shadow:inset -3px 3px 6px rgba(76, 100, 82, 0.658), inset 4px -2px 2px rgba(175, 192, 183, 0.418);
+}
+
+h2 {
+    transform:rotate(270deg);
+    color:rgb(182, 255, 163);
+    margin:30px auto;
+    font-size:22px;
+    text-align:center;
+}
+
+h3{
+    color:white;
+    font-size:14px;
+    position:absolute;
+    bottom: 43%;
+    transform:rotate(270deg);
+}
+
+img{
+    width:80px;
+    height:120px;
+    position:absolute;
+    bottom: 12%;
+}
+
+button{
+    margin: 10px auto;
+    position:absolute;
+    bottom:2%;
+    font-size:12px;
+    background:linear-gradient(to right, darkolivegreen, rgb(90, 102, 69));
+    border-radius:5px;
+    color:white;
+    padding:5px 10px;
+    box-shadow: -2px 2px 3px rgba(48, 88, 58, 0.658),  2px -2px 2px rgba(59, 78, 68, 0.418);
+}
+
+.remove{
+    position:absolute;
+    bottom:0%;  
+    height:12px;
+    left:1;
+    border:none;
+    color:white;
+    font-size:10px;
+    background:transparent;
+    box-shadow:none;
+}
+
+#sub {
+    background:linear-gradient(to right, darkolivegreen, rgb(90, 102, 69));
+    border-radius:5px;
+    color:white;
+    font-size:12px;
+    padding:5px 10px;
+    box-shadow: -2px 2px 3px rgba(48, 88, 58, 0.658),  2px -2px 2px rgba(59, 78, 68, 0.418);  
+}
+
+a {
+    text-decoration:none;
+    color:palegreen;
+}
