@@ -1,5 +1,5 @@
 body {
-    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.803),rgba(0, 0, 0, 0.553)),url("https://www.jigsawsuk.co.uk/wp-content/uploads/2018/01/19846_1.jpg");
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.803),rgba(0, 0, 0, 0.553)),url("background.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     font-family:'Halant';
@@ -248,7 +248,7 @@ a {
     #sub{
         width:30%;
         height:30px;
-        margin:15px auto;
+        margin:15gipx auto;
         align-self:center;
         border:1px solid red;
         box-shadow: inset -2px 2px 5px rgba(120, 207, 117, 0.688), inset 2px -2px 5px rgba(40, 75, 36, 0.642);
