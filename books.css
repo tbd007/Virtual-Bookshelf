@@ -269,5 +269,7 @@ a {
         font-size:0.6em;
     }
     #footer{
-        bottom:0;
+    display:none;   
+    }
+        
 }
