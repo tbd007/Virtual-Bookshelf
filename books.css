@@ -1,25 +1,62 @@
 body {
-    background:black;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.803),rgba(0, 0, 0, 0.553)),url("https://www.jigsawsuk.co.uk/wp-content/uploads/2018/01/19846_1.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family:'Halant';
+    height:auto;
+    min-height:100vh;
+    width:100%;
+
+}
+
+#head{
+    display:flex;
+    width:95%;
+    margin:5px auto;
+    height:40px;
+}
+
+
+
+#head > input{
+    background:rgba(0, 0, 0, 0.658);
+    color:rgba(248, 175, 123, 0.911);
+    border:1px solid rgba(145, 112, 61, 0.658);
+    margin:2px;
+    text-align:center;
+    box-shadow:inset -3px 3px 6px rgba(63, 40, 19, 0.658), inset 4px -2px 2px rgba(68, 44, 16, 0.548);
+}
+
+h1{
+    margin-top:0;
+    margin-left:10px;
+    color:rgba(248, 175, 123, 0.911);
+    font-size:1.8em;
+    font-family:'Jost';
+    font-weight:300;
+    text-shadow:2px 2px 5px black;
 }
 
 #firstshelf {
-    border:10px solid rgb(39, 27, 18);
+    
+    border-bottom:15px solid rgba(12, 7, 4, 0.801);
+    border-left:15px solid rgba(12, 7, 4, 0.801);
+    border-right:15px solid rgba(12, 7, 4, 0.801);
     height:auto;
-    width:99%;
-    margin:10px auto;
+    width:95%;
+    margin:40px auto;
+    margin-bottom:100px;
     display:grid;
     grid-template-rows: auto;
-    grid-template-columns:  repeat(auto-fit, minmax(120px, 1fr));
-    background:radial-gradient( rgba(44, 33, 10, 0.762), rgba(12, 9, 3, 0.8)),url("wood2.jpg");
-    background-size:cover;
-    background-position:center;
+    grid-template-columns:repeat(auto-fit, minmax(120px, 1fr));
+    box-shadow:5px 7px 10px black;
 }
 
 .book {
-    border:5px solid rgb(49, 42, 27);
+    border:2px solid rgb(49, 42, 27);
     position:relative;
-    max-width: 100px;
-    height:85vh;
+    max-width: 80px;
+    height:56vh;
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
@@ -34,35 +71,39 @@ h2 {
     transform:rotate(270deg);
     color:rgb(182, 255, 163);
     margin:30px auto;
-    font-size:22px;
+    font-size:18px;
     text-align:center;
+    font-family:'Halant';
 }
 
 h3{
     color:white;
-    font-size:14px;
+    font-family:'Halant';
+    font-size:12px;
     position:absolute;
     bottom: 43%;
     transform:rotate(270deg);
+    letter-spacing: 0.1em;
 }
 
 img{
-    width:80px;
-    height:120px;
+    width:40px;
+    height:60px;
     position:absolute;
-    bottom: 12%;
+    bottom: 13%;
 }
 
 button{
     margin: 10px auto;
     position:absolute;
     bottom:2%;
-    font-size:12px;
+    font-family:'Montserrat';
+    font-size:10px;
     background:linear-gradient(to right, darkolivegreen, rgb(90, 102, 69));
     border-radius:5px;
     color:white;
-    padding:5px 10px;
-    box-shadow: -2px 2px 3px rgba(48, 88, 58, 0.658),  2px -2px 2px rgba(59, 78, 68, 0.418);
+    padding:4px 7px;
+    box-shadow:inset -2px 2px 3px rgba(38, 41, 39, 0.658), inset 2px -2px 2px rgba(214, 218, 214, 0.486);
 }
 
 .remove{
@@ -77,16 +118,153 @@ button{
     box-shadow:none;
 }
 
-#sub {
-    background:linear-gradient(to right, darkolivegreen, rgb(90, 102, 69));
-    border-radius:5px;
-    color:white;
-    font-size:12px;
-    padding:5px 10px;
-    box-shadow: -2px 2px 3px rgba(48, 88, 58, 0.658),  2px -2px 2px rgba(59, 78, 68, 0.418);  
-}
+
 
 a {
     text-decoration:none;
-    color:palegreen;
+    color:rgb(214, 212, 212);
+}
+
+#shop-1, #shop-2, #shop-3 {
+    width:80px;
+    height:45px;
+    margin:0 15px;
+}
+
+#logos{
+    display:flex;
+    flex-direction:column;
+    width:90%;
+    height:auto;
+    margin:20px auto;
+    padding:10px;
+    /*background:rgb(51, 65, 28);*/
+}
+
+.shoplink{
+    text-transform:uppercase;
+    background:darkolivegreen;
+    color:rgba(198, 252, 198, 0.842);
+    border:1px solid rgba(235, 182, 103, 0.233);
+    font-family:'Montserrat';
+    width:70px;
+    text-align:center;
+    padding:5px 10px;
+    font-size:0.8em;
+    border-radius:5px;
+    box-shadow: inset -2px 2px 5px rgba(120, 207, 117, 0.688), inset 2px -2px 5px rgba(40, 75, 36, 0.642);
+}
+
+.shoplink:hover{
+    transform:scale(1.1);
+    border:1px solid rgb(233, 245, 212);
+}
+
+.results{
+    background:rgba(107, 96, 47, 0.778);
+    padding:10px;
+    margin:5px auto;
+    display:grid;
+    grid-template-rows:auto;
+    grid-template-columns:1fr 700px 1fr;
+    align-items: center;
+    line-height:1.3em;
+    border-radius:10px;
+    box-shadow: inset -2px 2px 5px rgba(83, 83, 83, 0.688), inset 2px -2px 5px rgba(83, 83, 83, 0.642);
+}
+
+.shopitem{
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#headerlogos{
+    font-family:'Montserrat';
+    text-align:center;
+}
+
+#footer{
+    align-self:center;
+    font-family:'Jost';
+    font-size:0.8em;
+    position:absolute;
+    bottom:0.5%;
+    right:0.9%;
+    color:rgba(152, 251, 152, 0.722);
+    text-align:center;
+}
+
+#head > #sub {
+    background:linear-gradient(to right, darkolivegreen, rgb(90, 102, 69));
+    border-radius:5px;
+    font-family:'Montserrat';
+    font-size:12px;
+    background:linear-gradient(to right, darkolivegreen, rgb(90, 102, 69));
+    border-radius:5px;
+    color:rgba(198, 252, 198, 0.842);
+    box-shadow: inset -2px 2px 5px rgba(120, 207, 117, 0.688), inset 2px -2px 5px rgba(40, 75, 36, 0.642);
+    padding:5px 10px;
+    
+}
+
+@media only screen and (max-width:768px){
+    #firstshelf{
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    
+    }
+
+    body, #wrapper, #head, #firstshelf, #logos{
+        max-width:90%;
+        margin:0 auto;
+    }
+    body{
+        max-width:99%;
+        overflow:hidden;
+        min-height:100vh;
+    }
+
+    #head{
+        max-width:90%;
+        display:flex;
+        flex-direction:column;
+        height:auto;
+        margin:25px auto;
+    }
+
+  
+
+    h1{
+        display:none;
+    }
+
+    #logos{
+        display:none;
+    }
+
+    #sub{
+        width:30%;
+        height:30px;
+        margin:15px auto;
+        align-self:center;
+        border:1px solid red;
+        box-shadow: inset -2px 2px 5px rgba(120, 207, 117, 0.688), inset 2px -2px 5px rgba(40, 75, 36, 0.642);
+    }
+
+    #head > input{
+        height:30px;
+    }
+
+    .book{
+        max-width:60px;
+        height:45vh;
+        
+    }
+
+    h2, h3{
+        font-size:0.6em;
+    }
 }
