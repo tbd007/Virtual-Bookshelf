@@ -94,6 +94,14 @@ img{
     bottom: 13%;
 }
 
+span{
+    color:palegreen;
+    font-size:1.1em;
+    border:1px solid white;
+    padding:0 10px;
+    margin:0px 5px 5px 0px;
+}
+
 button{
     margin: 10px auto;
     position:absolute;
@@ -124,6 +132,16 @@ button{
 a {
     text-decoration:none;
     color:rgb(214, 212, 212);
+}
+
+.nytlink {
+    text-decoration:none;
+    color:palegreen;
+    border:1px solid darkolivegreen;
+    box-shadow:2px 2px 7px rgb(39, 39, 39);
+    padding:2px 10px;
+    font-family: 'Jost';
+    background:rgba(0, 0, 0, 0.295);
 }
 
 #shop-1, #shop-2, #shop-3 {
@@ -174,6 +192,37 @@ a {
     box-shadow: inset -2px 2px 5px rgba(56, 56, 56, 0.688), inset 2px -2px 5px rgba(53, 53, 53, 0.642);
 }
 
+#bestseller {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:250px;
+    background:rgba(0, 0, 0, 0.397);
+    margin-bottom:20px; 
+}
+
+
+
+.nyt {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin:5px;
+}
+
+#rank1, #rank2, #rank3, #rank4, #rank5 {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
+    height:auto;
+    color:white;
+    font-family:'Jost';
+    text-align:center;
+}
+
 .shopitem{
     padding:10px;
     display:flex;
@@ -184,6 +233,7 @@ a {
 #headerlogos{
     font-family:'Montserrat';
     text-align:center;
+    margin-top:100px;
 }
 
 #footer{
@@ -210,6 +260,14 @@ a {
     
 }
 
+#times {
+    text-align:center;
+    color:white;
+    font-family:'Jost';
+    font-size: 0.7em;
+    display:none;
+}
+
 @media only screen and (max-width:768px){
     #firstshelf{
     display:grid;
@@ -224,7 +282,7 @@ a {
     }
     body{
         max-width:99%;
-        overflow:hidden;
+        
         min-height:100vh;
     }
 
@@ -249,7 +307,7 @@ a {
     #sub{
         width:30%;
         height:30px;
-        margin:15gipx auto;
+        margin:15px auto;
         align-self:center;
         border:1px solid red;
         box-shadow: inset -2px 2px 5px rgba(120, 207, 117, 0.688), inset 2px -2px 5px rgba(40, 75, 36, 0.642);
@@ -270,6 +328,30 @@ a {
     }
     #footer{
     display:none;   
+    }
+
+    #bestseller {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:auto;
+        background:rgba(0, 0, 0, 0.397);
+      
+    }
+
+    #nh2{
+        transform:none;
+        font-size:1.2em;
+        font-family:'Jost';
+    }
+
+    #rank1, #rank2, #rank3, #rank4, #rank5{
+        line-height:1.7em;
+    }
+
+    #times{
+        display:block;
     }
         
 }

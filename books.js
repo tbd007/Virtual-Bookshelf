@@ -66,3 +66,61 @@ function removeItems(event){
     item.parentNode.remove();
   
 }
+
+
+
+fetch("https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=dtXnwzge83flh7CG6df2u1OAkW1dutfc")
+  .then(response => response.text())
+  .then( data => JSON.parse(data))
+  .then (data => {
+    console.log(data);
+    const book = data.results.books[0].title;
+    const author = data.results.books[0].author;
+    const img = data.results.books[0].amazon_product_url;
+    const rank = data.results.books[0].rank;
+   
+    const book2 = data.results.books[1].title;
+    const author2 = data.results.books[1].author;
+    const img2 = data.results.books[1].amazon_product_url;
+    const rank2 = data.results.books[1].rank;
+
+    const book3 = data.results.books[2].title;
+    const author3 = data.results.books[2].author;
+    const img3 = data.results.books[2].amazon_product_url;
+    const rank3 = data.results.books[2].rank;
+
+    const book4 = data.results.books[3].title;
+    const author4 = data.results.books[3].author;
+    const img4 = data.results.books[3].amazon_product_url;
+    const rank4 = data.results.books[3].rank;
+
+    const book5 = data.results.books[4].title;
+    const author5 = data.results.books[4].author;
+    const img5 = data.results.books[4].amazon_product_url;
+    const rank5 = data.results.books[4].rank;
+
+    const bestdate = data.results.bestsellers_date;
+    console.log(bestdate);
+    document.getElementById('times').innerHTML = bestdate;
+ 
+
+ 
+  document.getElementById('rank1').innerHTML = `<p class="nytitem" ><span>${rank}</span>  ${book}</br>${author}</p>`;
+  document.getElementById('det1').innerHTML = `<a class="nytlink" href="${img}">READ</a>`;
+ 
+  document.getElementById('rank2').innerHTML = `<p class="nytitem" ><span>${rank2}</span>  ${book2} </br>${author2}</p>`;
+  document.getElementById('det2').innerHTML = `<a class="nytlink href="${img2}">READ</a>`;
+
+  document.getElementById('rank3').innerHTML = `<p class="nytitem" ><span>${rank3}</span>  ${book3} </br>${author3}</p>`;
+  document.getElementById('det3').innerHTML = `<a class="nytlink href="${img3}">READ</a>`;
+
+  document.getElementById('rank4').innerHTML = `<p class="nytitem" ><span>${rank4}</span>  ${book4} </br>${author4}</p>`;
+  document.getElementById('det4').innerHTML = `<a class="nytlink href="${img4}">READ</a>`;
+
+  document.getElementById('rank5').innerHTML = `<p class="nytitem" ><span>${rank5}</span>  ${book5} </br>${author5}</p>`;
+  document.getElementById('det5').innerHTML = `<a class="nytlink href="${img5}">READ</a>`;
+
+
+
+  })
+  
