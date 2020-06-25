@@ -161,7 +161,7 @@ a {
 }
 
 .results{
-    background:rgba(107, 96, 47, 0.778);
+    background:rgba(24, 24, 23, 0.922);
     padding:10px;
     margin:5px auto;
     display:grid;
@@ -170,7 +170,7 @@ a {
     align-items: center;
     line-height:1.3em;
     border-radius:10px;
-    box-shadow: inset -2px 2px 5px rgba(83, 83, 83, 0.688), inset 2px -2px 5px rgba(83, 83, 83, 0.642);
+    box-shadow: inset -2px 2px 5px rgba(56, 56, 56, 0.688), inset 2px -2px 5px rgba(53, 53, 53, 0.642);
 }
 
 .shopitem{
