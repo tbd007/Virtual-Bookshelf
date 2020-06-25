@@ -6,6 +6,7 @@ body {
     height:auto;
     min-height:100vh;
     width:100%;
+    margin:0 auto;
 
 }
 
@@ -267,4 +268,8 @@ a {
     h2, h3{
         font-size:0.6em;
     }
+    #footer{
+    display:none;   
+    }
+        
 }
