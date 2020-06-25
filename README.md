@@ -8,7 +8,7 @@ In the rubric SELECTED BOOKS all the books are displayed again with more detaile
 
 
 # Design
-![VBS](https://user-images.githubusercontent.com/58664635/85521585-c3d71a80-b604-11ea-84c6-a34ba79523fb.png)
+![screencapture-127-0-0-1-3004-index-html-2020-06-25-18_23_49](https://user-images.githubusercontent.com/58664635/85760381-10f4e280-b712-11ea-9680-ce2de373a87b.png)
 
 # Created using
  Vanilla JS, CSS, HTML, Google Books API
